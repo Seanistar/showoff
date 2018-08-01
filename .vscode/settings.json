@@ -1,0 +1,10 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    /* "autoMongoDB.instance.dbPath": "~/.mongodb/data",
+    "autoMongoDB.instance.port": 27017,
+    "autoMongoDB.instance.storageEngine": "ephemeralForTest",
+    "autoMongoDB.binary.platform": "~/.mongodb/binaries",
+    "autoMongoDB.binary.downloadDir": "3.4.4" */
+}
