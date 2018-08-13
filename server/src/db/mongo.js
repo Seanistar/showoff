@@ -8,4 +8,4 @@ module.exports.connect = function() {
 	  console.log("Connection Succeeded");
 	});
 	return db;
-}
+};

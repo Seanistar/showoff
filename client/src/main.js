@@ -4,8 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueSweetalert2 from 'vue-sweetalert2'
+import CommonPlugin from './plugin/Common'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
 
 Vue.use(VueSweetalert2)
+Vue.use(CommonPlugin)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <app-header/>
     <router-view></router-view>
+    <app-footer/>
   </div>
 </template>
 
 <script>
+import AppHeader from '@/lib/Header'
+import AppFooter from '@/lib/Footer'
 export default {
-  name: 'app'
+  name: 'app',
+  components: { AppHeader, AppFooter }
 }
 </script>
 
@@ -17,6 +22,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   text-align: center;
-  margin-top: 60px;
+  margin: 10px 20px;
 }
 </style>

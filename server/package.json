@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node src/app-route.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +19,11 @@
     "hapi": "^17.5.2",
     "mongoose": "^5.2.3",
     "morgan": "^1.9.0",
-    "multer": "^1.3.1"
+    "multer": "^1.3.1",
+    "mysql": "^2.16.0",
+    "pm2": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
   }
 }
