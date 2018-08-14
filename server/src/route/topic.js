@@ -54,4 +54,19 @@ router.put('/add', function(req, res, next) {
   });
 });
 
+router.put('/edit', function(req, res, next) {
+  const title = req.body['title'];
+  const content = req.body['content'];
+  const topicId = req.body['topicId'];
+  db.query('UPDATE topic SET title=?, content=? WHERE id=?', [title, content, topicId], function (err, rows) {
+    if (!err) {
+      // console.log(rows);
+      res.status(200).send({success: true});
+    } else {
+      console.log('query error : ' + err);
+      res.send(err);
+    }
+  });
+});
+
 module.exports = router;
