@@ -11,6 +11,7 @@ app.listen(process.env.PORT || 9018, function() {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
+app.use(express.static('public'));
 
 // routers
 var topicRouter = require('./route/topic');
